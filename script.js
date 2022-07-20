@@ -23,7 +23,7 @@ function options() {
       askUpperCase: askUpperCase,
       askLowerCase: askLowerCase
     }
-    if((length <= 8||length >= 128))
+    if((length < 8||length > 128))
     window.alert("Choose a number between 8 and 128.");
     else if((!askNumber)&&(!askSymbol)&&(!askUpperCase)&&(!askLowerCase))
     window.alert("Must choose one type.");
